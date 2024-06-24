@@ -1,0 +1,215 @@
+
+
+
+:root {
+    --primaryOne: #FF0000;
+    --primaryTwo: #00FFFF;
+    --background: #FFFFFF;
+    --altBackground: #F5F5F5;
+    --text-accent: #333333;
+    --padding: 4rem;
+    --negPadding: -4rem;
+    --paddingHalf: 2rem;
+    --radius: 4rem;
+
+    font-size: 16pt;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.1;
+    text-wrap: wrap;
+    max-width: 100vw;
+    font-size: 16pt;
+    background-color: var(--altBackground);
+  }
+  
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  h2 {
+    width: auto;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h4 {
+    min-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  p em {
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: var(--text-accent);
+    padding: 10px;
+    text-align: center;
+    color: var(--altBackground);
+  }
+
+  /* backgrounds for the sections (necessary for design) */
+
+  .bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--text-accent);
+    border-radius: 0 0 0 var(--radius);
+  }
+
+  .white {
+    background-color: var(--altBackground);
+    border: red 2px;
+    border-radius: none;
+    z-index: 1;
+  }
+
+  .bg-right {
+    position: absolute;
+    top: var(--negPadding);
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--text-accent);
+    border-radius: 0 var(--radius) 0 0;
+  }
+
+  .bg-inner {
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-accent);
+    border-radius: 0 var(--radius) 0;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 510px) and (max-width:1045px) {
+    :root {
+      --padding: 2rem;
+      --negPadding: -2rem;
+      --paddingHalf: 1rem;
+      --radius: 2rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.75rem;
+    }
+  
+    h4 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+
+    .bg-right {
+      top: calc(var(--negPadding)*2);
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width:510px) {
+    :root {
+      --padding: 1rem;
+      --negPadding: -1rem;
+      --paddingHalf: 0.5rem;
+      --radius: 2rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .bg-right {
+      top: calc(var(--negPadding)*2);
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    :root {
+      --padding: 10vw;
+      --negPadding: -10vw;
+      --paddingHalf: 5vw;
+      --radius: 15vw;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-size: 12vw;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    h4 {
+      font-size: 0.75rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .bg-right {
+      top: calc(var(--negPadding)*2);
+    }
+  }

@@ -1,0 +1,25 @@
+@import url(./global.css);
+@import url(./navBar.css);
+@import url(./header.css);
+@import url(./projects.css);
+@import url(./pricing.css);
+@import url(./contact.css);
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+  /* styles Under Construction */
+
+
+
+  /* .subContent-innerWrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  } */
