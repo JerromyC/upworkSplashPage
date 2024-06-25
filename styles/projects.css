@@ -47,6 +47,7 @@
 .projectInner p {
   font-size: 0.75rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .projectImageContainer {
@@ -130,7 +131,7 @@
   }
   }
 
-  @media screen and (max-width:510px) {
+  @media screen and (max-width:550px) {
     .projectsWrapper {
         margin-bottom: -1px;
     }
